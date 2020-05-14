@@ -480,6 +480,7 @@ class SignUpComponent extends React.Component {
                 value={name}
                 onChange={this.handleNameInput}
                 onKeyDown={this.handleKeyDown}
+                data-test="name"
               />
               <EmailField
                 placeholder={i18n.t("email")}
@@ -487,6 +488,7 @@ class SignUpComponent extends React.Component {
                 value={email}
                 onChange={this.handleEmailInput}
                 onKeyDown={this.handleKeyDown}
+                data-test="email"
               />
               <PasswordField
                 placeholder={i18n.t("password")}
@@ -494,6 +496,7 @@ class SignUpComponent extends React.Component {
                 value={password}
                 onChange={this.handlePasswordInput}
                 onKeyDown={this.handleKeyDown}
+                data-test="password"
               />
               <SignUpTip>{i18n.t("passwordTip")}</SignUpTip>
               <SignUpButton title={i18n.t("signUp")} onClick={this.handleSignUpClick} isLoading={isSignUpPending} />
